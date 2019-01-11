@@ -2,13 +2,12 @@ import math
 import plotly
 import plotly.graph_objs as go 
 
-yPlt = []
 xPlt = []
+yPlt = []
 
 for i, j in [(x, math.log10(x)) for x in range(1,1001)]:
-    yPlt.append(j)
     xPlt.append(i)
-    print(i, j)
+    yPlt.append(j)
 
 plotly.offline.plot(
 {
